@@ -12,8 +12,6 @@
       href="https://fonts.googleapis.com/css2?family=Marcellus&family=Inter:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <style>
       body {
         font-family: 'Inter', sans-serif;
@@ -24,99 +22,65 @@
         font-family: 'Marcellus', serif;
         letter-spacing: 0.06em;
       }
-      .lux-box {
-        background-color: #f9f9f9;
-        border: 1px solid #dcdcdc;
-      }
       .lux-accent {
         color: #000000;
-      }
-      .lux-button {
-        background-color: #000000;
-        color: #ffffff;
-        transition: background-color 0.3s ease;
-      }
-      .lux-button:hover {
-        background-color: #333333;
       }
     </style>
   </head>
   <body>
-    <script>AOS.init();</script>
     <header class="flex flex-col md:flex-row justify-between items-center px-6 py-4 border-b border-gray-200 bg-white shadow-sm">
       <h1 class="text-3xl font-bold tracking-wide lux-accent">Gallery of Life</h1>
-      <nav class="mt-4 md:mt-0">
-        <ul class="flex flex-wrap justify-center md:justify-start space-x-4 text-base md:text-lg text-black">
-          <li><a href="#manifesto" class="hover:underline">Manifesto</a></li>
-          <li><a href="#blog" class="hover:underline">Blog</a></li>
-          <li><a href="#team" class="hover:underline">Team</a></li>
-          <li><a href="#contact" class="hover:underline">Contact</a></li>
-        </ul>
-      </nav>
     </header>
 
-    <section id="hero" class="text-center py-20 px-6 bg-white" data-aos="fade-up">
-      <img src="https://arweave.net/txidHero123456" alt="Hero Art" class="w-full h-64 object-cover rounded mb-6" />
-      <h2 class="text-4xl md:text-5xl font-semibold mb-4 tracking-wider lux-accent">Memory is the final luxury.</h2>
-      <p class="max-w-2xl mx-auto text-lg italic text-gray-700">
-        A space for permanence in a world that forgets too easily.
-      </p>
-    </section>
-
-    <section id="manifesto" class="px-6 py-12 bg-white" data-aos="fade-up">
-      <h3 class="text-2xl md:text-3xl font-bold mb-6 text-center tracking-widest lux-accent">Manifesto</h3>
-      <img src="https://arweave.net/txidManifesto789abc" alt="Manifesto Visual" class="w-full rounded mb-6" />
-      <article class="prose prose-lg max-w-4xl mx-auto text-gray-800">
-        <p>Every act of oppression in history—colonial, caste, state, patriarchal—began by burning stories...</p>
-        <a
-          href="https://arweave.net/YOUR_MANIFESTO_LINK"
-          class="mt-6 inline-block lux-button px-4 py-2 rounded-lg"
-          target="_blank"
-          >Read on Arweave</a>
-      </article>
-    </section>
-
-    <section id="blog" class="px-6 py-12 bg-[#f6f6f6]" data-aos="fade-up">
-      <h3 class="text-2xl md:text-3xl font-bold mb-8 text-center tracking-widest lux-accent">Blog</h3>
-      <div class="grid md:grid-cols-2 gap-6">
-        <article class="lux-box p-6 rounded-lg transition-transform hover:scale-[1.01]" data-aos="fade-up">
-          <img src="https://arweave.net/txidBlog1abc123" alt="Web3" class="w-full h-40 object-cover rounded mb-4" />
-          <h4 class="text-xl font-semibold lux-accent">What is Web3?</h4>
-          <p class="mt-2 text-gray-800">A primer on decentralization, permanence, and artistic sovereignty...</p>
-          <a href="#" class="text-sm text-black underline mt-2 block">Read more</a>
-        </article>
-
-        <article class="lux-box p-6 rounded-lg transition-transform hover:scale-[1.01]" data-aos="fade-up">
-          <img src="https://arweave.net/txidBlog2xyz789" alt="Luxury" class="w-full h-40 object-cover rounded mb-4" />
-          <h4 class="text-xl font-semibold lux-accent">Luxury is a survival instinct</h4>
-          <p class="mt-2 text-gray-800">Why aesthetic movements are not indulgences but strategies of reclaiming meaning...</p>
-          <a href="#" class="text-sm text-black underline mt-2 block">Read more</a>
-        </article>
-
-        <article class="lux-box p-6 rounded-lg transition-transform hover:scale-[1.01]" data-aos="fade-up">
-          <img src="https://arweave.net/txidBlog3def456" alt="AI" class="w-full h-40 object-cover rounded mb-4" />
-          <h4 class="text-xl font-semibold lux-accent">AI can't live a life</h4>
-          <p class="mt-2 text-gray-800">Why Web3 is the soul’s record in the age of synthetic imitation...</p>
-          <a href="#" class="text-sm text-black underline mt-2 block">Read more</a>
-        </article>
+    <section id="manifesto" class="px-6 py-16 bg-white">
+      <h2 class="text-4xl font-semibold mb-8 text-center tracking-wider lux-accent">Manifesto</h2>
+      <div class="max-w-4xl mx-auto text-lg text-gray-800 space-y-6 leading-relaxed">
+        <p><strong>Memory is the final luxury.</strong></p>
+        <p>Every act of oppression in history—colonial, caste, state, patriarchal—began by burning stories, erasing records, and un‑naming the makers. When narrative dies, dehumanisation thrives. At its most fundamental level, it is the suppression of stories that has enabled and legitimized the oppression of marginalised communities.</p>
+        <p>For centuries, only the rich and powerful were granted the privilege of having their stories live on, while entire communities had their histories erased.</p>
+        <p>Colonial powers looted ancient manuscripts and destroyed revolutionary texts. Legacies of ethnic minorities, women, and queer artists vanished as their art was confiscated or ostracized. Indigenous oral histories were dismissed as myth, while sacred artefacts were stolen and displayed as curiosities in distant museums.</p>
+        <p>For the first time, the emergence of <strong>web3 technology</strong>—with its decentralized storage and transparent blockchain ledgers—offers a radical shift. It democratizes permanence and proof of authenticity.</p>
+        <p>Any creator, not just a blue‑chip painter or the aristocrat, can anchor their work in time. Proof of authenticity is no longer a privilege reserved for oil on canvas or the elite; it belongs to every medium of expression: the defiant verses of a dissident poet, the unflinching lens of a war photographer, the dancer who turns her mourning into movement, the weaver who spins generational memory into cloth.</p>
+        <p>Smart contracts on the blockchain do more than timestamp and archive these artistic records. They program justice through mathematics, the only truth that cannot be manipulated, offering perpetual royalties for artists, fair collective splits, and transparent provenance. There is no centralised authority that can censor or rewrite a history recorded on the chain.</p>
+        <p>The production, distribution, and consumption of art are on the verge of a seismic transformation. We are entering an era where we will finally find true freedom in why we create and who we create for.</p>
+        <p><strong>Today we stand at that crossroads.</strong></p>
+        <p>The Gallery of Life exists to midwife the shift—to curate the South Asian and global diaspora’s living artefacts into permanence, to empower narratives that have been hidden, to excavate and revive all that has been lost, and to tangibly prove the soul inside every medium.</p>
       </div>
-    </section>
 
-    <section id="team" class="px-6 py-12 bg-white" data-aos="fade-up">
-      <h3 class="text-2xl md:text-3xl font-bold mb-6 text-center tracking-widest lux-accent">The Team</h3>
-      <div class="max-w-3xl mx-auto text-center text-gray-800">
-        <img src="https://arweave.net/txidFounder987654" alt="Founder" class="mx-auto mb-4 rounded-full w-32 h-32 object-cover" />
-        <p class="text-lg">Founded by Adrija Chakravorty — researcher, writer, and Web3 founder exploring permanence as a form of resistance.</p>
+      <div class="max-w-4xl mx-auto mt-16 text-base text-gray-700">
+        <h3 class="text-2xl font-semibold mb-4 tracking-wide lux-accent">This Manifesto is a Non-Fungible Token</h3>
+        <p class="mb-4">The Manifesto of the Gallery of Life has been minted as a one-of-one token on the Ethereum blockchain on 16 May 2025. The text and its metadata are stored permanently using decentralized technologies. Below are the verified records of its authorship and ownership:</p>
+        <ul class="list-disc ml-5 space-y-4">
+          <li>
+            <strong>Smart Contract:</strong><br />
+            The contract is deployed on Ethereum Mainnet at address:
+            0x4ac689D913Af521D0C37dbD52Fb8686E199968fd <a href="https://etherscan.io/address/0x4ac689d913af521d0c37dbd52fb8686e199968fd" class="underline text-blue-700" target="_blank">View Contract on Etherscan</a>.<br />
+            It embeds ERC-721 functionality and perpetual 15% creator royalties via ERC-2981.
+          </li>
+          <li>
+            <strong>Token ID:</strong><br/>
+            <span class="font-mono">1</span> — a single token was minted by this contract.
+          </li>
+          <li>
+            <strong>Owner Wallet:</strong><br />
+            <span class="font-mono">0xc6...72486</span> — creator and current holder of the Manifesto NFT.
+          </li>
+          <li>
+            <strong>Manifesto Metadata:</strong><br />
+            Stored on Arweave permanently as JSON at
+            <a href="https://arweave.net/QkHX8EyptgudbILIxtT468ZT2cQbHwgpQ2aV_yEQlIE" class="underline text-blue-700" target="_blank">Arweave metadata permalink</a>.
+          </li>
+          <li>
+            <strong>Manifesto Text (Markdown):</strong><br />
+            The original content file, archived forever:
+            <a href="https://arweave.net/0qnYAs_3kJfjMlaSGEEcEsSmldzFqxMYlCWUrem06wI" class="underline text-blue-700" target="_blank">Arweave markdown permalink</a>.
+          </li>
+        </ul>
       </div>
-    </section>
-
-    <section id="contact" class="px-6 py-12 bg-[#f6f6f6]" data-aos="fade-up">
-      <h3 class="text-2xl md:text-3xl font-bold mb-6 text-center tracking-widest lux-accent">Contact</h3>
-      <p class="text-lg text-center text-gray-800">For collaborations or press inquiries, reach out at <span class="font-semibold">adrija@galleryoflife.xyz</span></p>
     </section>
 
     <footer class="px-6 py-4 border-t border-gray-200 text-sm text-center bg-white text-black">
-      <p>Built on the spirit of decentralization. Some content permanently hosted on <a href="https://arweave.org" class="underline">Arweave</a>.</p>
+      <p>Built in the spirit of preserving memory in a world that forgets too easily.</p>
     </footer>
   </body>
 </html>
